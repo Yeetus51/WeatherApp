@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Montserrat:wght@300&family=Sacramento&family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+header>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:800;
+    font-size: 30px;
+    gap: 20px;
+}
+
+
+
+body{
+
+    background-color: #eee;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+
+    background: 
+    repeating-linear-gradient(45deg, #a7abff10 , #a7abff10 30px, #e5e5f700 7.5px, #e5e5f700 60.5px),
+    linear-gradient(rgb(62, 142, 189), rgb(41, 73, 94));
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden{
+    display: none;
+}
+main{
+    flex: 1;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.container, header>div{
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    min-width: 320px;
+    width: 600px;
+    color: white;
+
+}
+header>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-container, .weather-container, header>div>div{
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(60deg,rgba(170, 191, 204, 0.2)60%,rgba(255, 255, 255, 0.26) 70%,rgba(255, 255, 255, 0.26) 80%,rgba(170, 191, 204, 0.2)85%);
+    backdrop-filter: blur(4px);
+    filter: drop-shadow(15px 40px 7px rgba(0, 0, 0, 0.486));
+    border: outset 2px rgba(170, 191, 204, 0.322);
+    border-radius: 20px;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+.search-container input, .search-container button{
+    align-self:stretch;
+    padding: 0 15px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 39, 75, 0.562);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.search-container input{
+    flex: 1;
+    border: inset 2px rgba(69, 116, 160, 0.562);
+
+}
+.search-container button{
+    border: outset 2px rgba(69, 116, 160, 0.562);
+}
+.search-container button:hover{
+    background-color: rgba(35, 84, 129, 0.562);
+}
+
+
+
+
+.first-info{gap: 30px;}
+.first-info>div{
+    display: flex;
+    gap: 20px;  
+    font-size: 30px;
+}
+.first-info i{
+    font-size: 80px;
+}
+
+
+
+.weather-container, .first-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.weather-container{
+    height: 500px;  
+    border-radius: 40px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.second-info{
+    display: flex;
+    gap: 10px 30px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.third-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+}
+
+.info-point{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: 50px;
+    background-color: rgb(30, 56, 73);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+footer a{
+    color: white;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+    
+    .third-info{
+        display: flex;
+        align-self: stretch;
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-around;  
+    }
+    
+    .info-point{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
