@@ -4,7 +4,7 @@
   "description": "My webpack project",
   "main": "index.js",
   "repository": {
-    "url": "git+https://github.com/Yeetus51/Todo-List.git"
+    "url": "git+https://github.com/Yeetus51/WeatherApp.git"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",

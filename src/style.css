@@ -1,200 +1,199 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Montserrat:wght@300&family=Sacramento&family=Young+Serif&display=swap');
-*{
+
+:root {
+    font-size: 16px; 
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    padding: 10px;
-    height: 100px;
+
+header {
+    padding: 20px; 
+    height: 100px; 
     display: flex;
     justify-content: center;
-    padding: 20px;
 }
-header>div>div{
+
+header > div > div {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight:800;
-    font-size: 30px;
-    gap: 20px;
+    font-weight: 800;
+    font-size: 1.875rem;
+    gap: 1.25rem;
 }
 
-
-
-body{
-
+body {
     background-color: #eee;
-    min-height: 100vh;
+    min-height: 100vh; 
     font-family: 'Montserrat', sans-serif;
-
-    background: 
-    repeating-linear-gradient(45deg, #a7abff10 , #a7abff10 30px, #e5e5f700 7.5px, #e5e5f700 60.5px),
-    linear-gradient(rgb(62, 142, 189), rgb(41, 73, 94));
-
-
+    background: repeating-linear-gradient(45deg, #a7abff10, #a7abff10 30px, #e5e5f700 7.5px, #e5e5f700 60.5px), linear-gradient(rgb(62, 142, 189), rgb(41, 73, 94));
     display: flex;
     flex-direction: column;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
-main{
+
+main {
     flex: 1;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
-  
 }
 
-.container, header>div{
-
+.container, header > div {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
     min-width: 320px;
     width: 600px;
     color: white;
+}
 
-}
-header>div{
+header > div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.search-container, .weather-container, header>div>div{
-    width: 100%;
-    height: 70px;
-    background: linear-gradient(60deg,rgba(170, 191, 204, 0.2)60%,rgba(255, 255, 255, 0.26) 70%,rgba(255, 255, 255, 0.26) 80%,rgba(170, 191, 204, 0.2)85%);
-    backdrop-filter: blur(4px);
-    filter: drop-shadow(15px 40px 7px rgba(0, 0, 0, 0.486));
-    border: outset 2px rgba(170, 191, 204, 0.322);
-    border-radius: 20px;
+
+.search-container, .weather-container, header > div > div {
+    width: 100%; 
+    height: 70px; 
+    background: linear-gradient(60deg, rgba(170, 191, 204, 0.2) 60%, rgba(255, 255, 255, 0.26) 70%, rgba(255, 255, 255, 0.26) 80%, rgba(170, 191, 204, 0.2) 85%);
+    backdrop-filter: blur(4px); 
+    filter: drop-shadow(15px 40px 7px rgba(0, 0, 0, 0.486)); 
+    border: outset 2px rgba(170, 191, 204, 0.322); 
+    border-radius: 1.25rem;
 }
-.search-container{
+
+.search-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    gap: 10px;
+    padding: 10px; 
+    gap: 0.625rem;
 }
-.search-container input, .search-container button{
-    align-self:stretch;
-    padding: 0 15px;
+
+.search-container input, .search-container button {
+    align-self: stretch;
+    padding: 0 15px; 
     border: 0;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     color: white;
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(0, 39, 75, 0.562);
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 2px; 
 }
-.search-container input{
-    flex: 1;
-    border: inset 2px rgba(69, 116, 160, 0.562);
 
+.search-container input {
+    flex: 1;
+    border: inset 2px rgba(69, 116, 160, 0.562); 
 }
-.search-container button{
-    border: outset 2px rgba(69, 116, 160, 0.562);
+
+.search-container button {
+    border: outset 2px rgba(69, 116, 160, 0.562); 
 }
-.search-container button:hover{
+
+.search-container button:hover {
     background-color: rgba(35, 84, 129, 0.562);
 }
 
+.first-info {
+    gap: 1.875rem;
+}
 
-
-
-.first-info{gap: 30px;}
-.first-info>div{
+.first-info > div {
     display: flex;
-    gap: 20px;  
-    font-size: 30px;
-}
-.first-info i{
-    font-size: 80px;
+    gap: 1.25rem;
+    font-size: 1.875rem;
 }
 
+.first-info i {
+    font-size: 5rem;
+}
 
-
-.weather-container, .first-info{
+.weather-container, .first-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.weather-container{
-    height: 500px;  
-    border-radius: 40px;
+
+.weather-container {
+    height: 500px; 
+    border-radius: 2.5rem;
     justify-content: space-around;
-    padding: 20px;
+    padding: 20px; 
 }
 
-.second-info{
+.second-info {
     display: flex;
-    gap: 10px 30px;
+    gap: 0.625rem 1.875rem;
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 1.25rem;
     justify-content: center;
 }
 
-.third-info{
+.third-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px 40px;
+    gap: 1.25rem 2.5rem;
 }
 
-.info-point{
+.info-point {
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 10px ;
+    gap: 0.625rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-footer{
-    height: 50px;
+footer {
+    height: 50px; 
     background-color: rgb(30, 56, 73);
-
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    color: white;
-}
-footer a{
+    gap: 0.625rem;
     color: white;
 }
 
-
-
+footer a {
+    color: white;
+}
 
 @media only screen and (min-width: 600px) {
-    
-    .third-info{
+    .third-info {
         display: flex;
         align-self: stretch;
         flex-direction: row;
-        gap: 0;
-        justify-content: space-around;  
+        gap: 0; 
+        justify-content: space-around;
     }
-    
-    .info-point{
+
+    .info-point {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 0.625rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    :root {
+        font-size: 14px; 
+    }
+    .container{
+        padding: 0 20px;
+    }
+    .search-container input {
+        min-width: 20px;
     }
 }
